@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Home from "./Home"
+import Footer from './Footer'
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
       <div className="flex justify-center items-center mt-4">
         <Login className="mr-5" />
         <Register />
-      </div>
-      <Footer /> */}
+      </div> */}
+      <Footer />
       <Outlet />
     </div>
   )
