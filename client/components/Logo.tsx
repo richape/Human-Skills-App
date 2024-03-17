@@ -14,7 +14,6 @@ function Logo({ className }: LogoProps) {
       </div>
     </>
   )
-
 }
 
 export default Logo
