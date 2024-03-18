@@ -7,15 +7,17 @@ import Footer from './Footer'
 
 function App() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#40276E' }}>
+    <div className="flex flex-col min-h-screen" style={{ backgroundColor: '#40276E' }}>
       <Home />
       <Logo className="pt-7" />
-      <div className="flex justify-center items-center mt-4">
+      <div className="flex justify-center pb-12 items-center mt-4">
         <Login className="mr-5" />
         <Register />
       </div>
-      <Footer />
+      <div className='flex-grow'>
       <Outlet />
+      </div>
+      <Footer />
     </div>
   )
 }

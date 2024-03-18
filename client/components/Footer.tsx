@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <div className="bottom-0 left-0 w-full">
-        <div className="flex items-center justify-center p-5 h-full">
+        <div className="flex items-center justify-center h-full">
           <img
             src="./images/footer.png"
             alt="Dev Academy Footer"
