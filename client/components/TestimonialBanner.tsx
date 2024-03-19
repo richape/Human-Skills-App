@@ -31,7 +31,7 @@ const TestimonialBanner = () => {
  }, []);
 
  return (
-    <div ref={bannerRef} className="overflow-hidden whitespace-nowrap">
+    <div ref={bannerRef} className="py-1 overflow-hidden whitespace-nowrap">
       {quotes.map((quote, index) => (
         <div key={index} className="inline-block px-4">
           <blockquote className="text-white italic">{quote}</blockquote>
