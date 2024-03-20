@@ -18,14 +18,19 @@ const TestimonialBanner = () => {
     const scrollQuotes = () => {
       if (banner) {
         scrollPosition -= 1;
+        console.log(-banner.scrollWidth);
+        
         if (scrollPosition <= -banner.scrollWidth) {
           scrollPosition = 0;
+          setTimeout(() => {
+            scrollQuotes();
+          }, 0);
         }
         banner.style.transform = `translateX(${scrollPosition}px)`;
       }
     };
 
-    const scrollInterval = setInterval(scrollQuotes, 40); // Adjust speed as needed
+    const scrollInterval = setInterval(scrollQuotes, 20); // Adjust speed as needed
 
     return () => clearInterval(scrollInterval); // Cleanup on component unmount
  }, []);
