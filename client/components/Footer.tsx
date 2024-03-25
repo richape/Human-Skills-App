@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer style={{ backgroundColor: '#60C6CB' }}>
       <div className="bottom-0 left-0 w-full">
         <div className="flex items-center justify-center h-full">
           <img
