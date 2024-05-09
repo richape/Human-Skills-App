@@ -9,7 +9,9 @@ import TestimonialBanner from './TestimonialBanner'
 function App() {
   return (
     <div className='flex flex-col min-h-screen overflow-hidden' style={{ backgroundColor: '#40276E' }}>
-      <TestimonialBanner />
+      <div style={{ backgroundColor: '#60C6CB' }}>
+        <TestimonialBanner />
+      </div>
       <Home />
       <Logo className='pt-7' />
       <div className='flex justify-center pb-12 items-center mt-4'>

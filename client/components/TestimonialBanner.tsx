@@ -38,7 +38,7 @@ const TestimonialBanner = () => {
  return (
     <div ref={bannerRef} className="whitespace-nowrap">
       {quotes.map((quote, index) => (
-        <div key={index} className="inline-block px-1" style={{ backgroundColor: '#60C6CB' }}>
+        <div key={index} className="inline-block px-1">
           <blockquote className="text-white italic">{quote}</blockquote>
         </div>
       ))}
