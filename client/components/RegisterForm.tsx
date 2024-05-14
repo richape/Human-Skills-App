@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 
 export default function RegisterForm() {
   const [fullname , setFullname] = useState('')
@@ -6,8 +6,12 @@ export default function RegisterForm() {
   const [cohort , setCohort] = useState('')
   const [password , setPassword] = useState('')
 
+  function handleSubmit(event: FormEvent<HTMLFormElement>): void {
+    throw new Error("Function not implemented.")
+  }
+
   return (
-    <>
+    <form method="post" onSubmit={handleSubmit}>
     <label>
       Full Name:
       <input type="text" value={fullname} onChange={(e) => setFullname(e.target.value)}/>
@@ -24,7 +28,7 @@ export default function RegisterForm() {
       Password:
       <input type="text" value={password} onChange={(e) => setPassword(e.target.value)}/>
     </label>
-    <button type="submit">Submit</button>
-    </>
+    <button type="submit" onSubmit={handleSubmit}>Submit</button>
+    </form>
   )
 }
