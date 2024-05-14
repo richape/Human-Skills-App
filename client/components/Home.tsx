@@ -9,11 +9,11 @@ function Home() {
       <h2>Welcome to the</h2>
       <h1 className="text-7xl font-bold">Human Skills</h1>
       <h2>reflections App</h2>
-      <Logo className='pt-7' />
-      <div className='flex justify-center pb-12 items-center mt-4'>
+      <Logo className='pt-8' />
+      <div className='flex justify-center pb-8 items-center mt-4'>
       <Link to="/About">
         <Login className='mr-6' />
-      </Link>  
+      </Link> 
         <Register />
       </div>
     </div>

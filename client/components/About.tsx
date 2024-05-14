@@ -10,7 +10,7 @@ function About() {
           </h1>
       </div>
         <div>
-          <div className="text-yellow-500 p-8 px-12 text-3xl font-sans">
+          <div className="text-yellow-500 p-8 px-20 text-3xl font-sans">
             <p className="p-4">
             This is your friendly Human Skills reflections App, it has been created
             to make capturing your reflections during Bootcamp more easily to help
