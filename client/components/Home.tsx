@@ -11,10 +11,10 @@ function Home() {
       <h2>reflections App</h2>
       <Logo className='pt-8' />
       <div className='flex justify-center pb-8 items-center mt-4'>
-      <Link to="/About">
+      <Link to="/about">
         <Login className='mr-6' />
       </Link>
-      <Link to="/Register">
+      <Link to="/register">
         <Register />
       </Link>
       </div>

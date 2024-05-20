@@ -3,7 +3,7 @@ import HomeButton from "./HomeButton"
 function About() {
   return (
     <>
-      <div className="flex items-center p-8">
+      <div className="flex items-center p-6">
         <HomeButton />
           <h1 className="text-yellow-500 text-5xl font-bold font-sans">
             Welcome to Bootcamp
