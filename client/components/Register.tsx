@@ -1,27 +1,3 @@
-// // Need to work on Auth0 form and routes
-// import { useEffect } from 'react'
-// import { useAuth0 } from '@auth0/auth0-react'
-// import { useNavigate } from 'react-router-dom'
-
-// export default function Register() {
-//   const { user, getAccessTokenSilently } = useAuth0()
-//   const userDb = useUser()
-//   const navigate = useNavigate()
-//   const initialFormData = {
-//     Full_name: '',
-//     Email: '',
-//     Cohort: '',
-//     Password: '',
-//     'Confirm Password': '',
-//   }
-
-//   const [formData, setFormData] = useState(initialFormData)
-
-//   useEffect(() => {
-//     if (userDb.data) navigate('/')
-//   }, [userDb.data, navigate])
-// }
-
 function Register() {
     return (
       <>

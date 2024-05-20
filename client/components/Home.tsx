@@ -13,8 +13,10 @@ function Home() {
       <div className='flex justify-center pb-8 items-center mt-4'>
       <Link to="/About">
         <Login className='mr-6' />
-      </Link> 
+      </Link>
+      <Link to="/RegisterForm">
         <Register />
+      </Link>
       </div>
     </div>
   )

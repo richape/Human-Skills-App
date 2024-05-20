@@ -1,34 +1,72 @@
-import { FormEvent, useState } from "react"
+import { useState } from 'react';
 
-export default function RegisterForm() {
-  const [fullname , setFullname] = useState('')
-  const [email , setEmail] = useState('')
-  const [cohort , setCohort] = useState('')
-  const [password , setPassword] = useState('')
+const RegisterForm = () => {
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email: '',
+    cohort: '',
+    password: ''
+  });
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>): void {
-    throw new Error("Function not implemented.")
-  }
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    // Handle form submission (e.g., send data to the server)
+    console.log('Form Data Submitted: ', formData);
+  };
 
   return (
-    <form method="post" onSubmit={handleSubmit}>
-    <label>
-      Full Name:
-      <input type="text" value={fullname} onChange={(e) => setFullname(e.target.value)}/>
-    </label>
-    <label>
-      Email:
-      <input type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
-    </label>
-    <label>
-      Cohort:
-      <input type="text" value={cohort} onChange={(e) => setCohort(e.target.value)}/>
-    </label>
-    <label>
-      Password:
-      <input type="text" value={password} onChange={(e) => setPassword(e.target.value)}/>
-    </label>
-    <button type="submit" onSubmit={handleSubmit}>Submit</button>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="fullname">Full Name:</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          value={formData.fullname}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="cohort">Cohort:</label>
+        <input
+          type="text"
+          id="cohort"
+          name="cohort"
+          value={formData.cohort}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+        />
+      </div>
+      <button type="submit">Register</button>
     </form>
-  )
-}
+  );
+};
+
+export default RegisterForm;
