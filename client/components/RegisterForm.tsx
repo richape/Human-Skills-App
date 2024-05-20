@@ -23,9 +23,14 @@ const RegisterForm = () => {
   };
 
   return (
+    <div className="text-yellow-500 pt-8 text-center">
+      <h2 className="text-7xl font-bold ">Register</h2>
+      <p className="p-4 text-3xl">
+            Please fill in your details below to register your account
+            </p>
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="fullname">Full Name:</label>
+      <div className='p-4 text-3xl'>
+        <label htmlFor="fullname">Full Name: </label>
         <input
           type="text"
           id="fullname"
@@ -34,8 +39,8 @@ const RegisterForm = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
+      <div className='p-4 text-3xl'>
+        <label htmlFor="email">Email: </label>
         <input
           type="email"
           id="email"
@@ -44,8 +49,8 @@ const RegisterForm = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
-        <label htmlFor="cohort">Cohort:</label>
+      <div className='p-4 text-3xl'>
+        <label htmlFor="cohort">Cohort: </label>
         <input
           type="text"
           id="cohort"
@@ -54,8 +59,8 @@ const RegisterForm = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
-        <label htmlFor="password">Password:</label>
+      <div className='p-4 text-3xl'>
+        <label htmlFor="password">Password: </label>
         <input
           type="password"
           id="password"
@@ -64,9 +69,12 @@ const RegisterForm = () => {
           onChange={handleChange}
         />
       </div>
-      <button type="submit">Register</button>
+      <button type="submit" className="py-2 px-5 rounded-lg text-2xl font-bold bg-opacity-75 cursor-pointer">
+          login
+        </button>
     </form>
-  );
-};
+    </div>
+  )
+}
 
 export default RegisterForm;

@@ -14,7 +14,7 @@ function Home() {
       <Link to="/About">
         <Login className='mr-6' />
       </Link>
-      <Link to="/RegisterForm">
+      <Link to="/Register">
         <Register />
       </Link>
       </div>
