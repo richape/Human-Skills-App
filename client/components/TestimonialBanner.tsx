@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 
 const TestimonialBanner = () => {
  const quotes = [
-    "     ",
     "If you want to be a good developer, learn the tech. If you want to be a great developer, learn about people - Joshua Vial - co founder of Dev Academy Aotearoa ~",
     "Positive (appreciative) feedback can motivate people to continue doing what they’re doing well, and do it with more vigour, determination, and creativity ~ ",
     "Empathy fuels connection. Sympathy drives disconnection - Brene Brown ~ ",
